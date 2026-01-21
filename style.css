@@ -4,7 +4,14 @@
   box-sizing: border-box;
 }
 
-
+.pattern {
+  position: absolute;
+  inset: 0;
+  z-index: 0; /* dưới mọi thứ */
+  mix-blend-mode: multiply;
+  opacity: 0.1;
+  pointer-events: none;
+}
 
 
 .pattern img {
@@ -526,5 +533,6 @@ margin-bottom: 10px;
 @media (max-width: 600px) {
   #skills div { grid-template-columns: 1fr !important; }
 }
+
 
 
