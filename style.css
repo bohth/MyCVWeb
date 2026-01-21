@@ -10,7 +10,7 @@
   z-index: 0; /* dưới mọi thứ */
   mix-blend-mode: multiply;
   opacity: 0.1;
-  pointer-events: none;
+  /*pointer-events: none;*/
 }
 
 
@@ -533,6 +533,7 @@ margin-bottom: 10px;
 @media (max-width: 600px) {
   #skills div { grid-template-columns: 1fr !important; }
 }
+
 
 
 
