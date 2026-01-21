@@ -29,7 +29,7 @@ main, nav, header, footer, .content {
 /* --- Body --- */
 body {
   font-family: 'Nunito Sans', sans-serif;
-  background: #ff9933 url('https://i.imgur.com/xsQmBD9.png');
+  background: #ff9933;
   background-size: 64px;
   color: #333;
   display: flex;
@@ -533,6 +533,7 @@ margin-bottom: 10px;
 @media (max-width: 600px) {
   #skills div { grid-template-columns: 1fr !important; }
 }
+
 
 
 
