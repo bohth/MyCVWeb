@@ -61,7 +61,7 @@ header {
 .intro {
   background-color: #1a5f00;
   color: #d7ffcc;
-  font-size: 10px;
+  font-size: 12px;
   padding: 10px 20px;
   border-radius: 10px;
   margin: 10px auto;
@@ -524,16 +524,15 @@ margin-bottom: 10px;
     
 }
 
-.expcc {
-
-  
+.cv {
+  font-size: 12px;
+  margin: 0;
 }
 
 /* Tùy chỉnh cho responsive lưới skill */
 @media (max-width: 600px) {
   #skills div { grid-template-columns: 1fr !important; }
 }
-
 
 
 
