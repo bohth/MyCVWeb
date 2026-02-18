@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tofu’s Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comic+Relief:wght@400;700&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<script> 
+  const sections = [
+    'aboutme',
+    'experience',
+    'education',
+    'skills'  // thêm skills vào đây
+  ];
+
+  function showSection() {
+    const hash = window.location.hash.replace('#', '') || 'aboutme';
+
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.style.display = (id === hash) ? 'block' : 'none';
+      }
+    });
+
+    // active tab
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.classList.remove('active');
+      if (tab.getAttribute('href') === '#' + hash) {
+        tab.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('hashchange', showSection);
+  window.addEventListener('load', showSection);
+</script>
+<body>
+
+  <header>
+    <h1 class="logo">@BOHTH</h1>
+    <p class="intro">
+      I'm self-taught in HTML/CSS, so this is how far I’ve gotten for now — still plenty of room for improvement!<br>I got a bit of help from AI with the JavaScript part and took design inspiration from Habbo Hotel.
+      <br>If you have any feedback or just want to chat, I’d love to hear from you! 💗💗💗
+    </p>
+  </header>
+
+  <nav class="tabs">
+    
+    <!--<button class="tab active">About Me</button>
+    <button class="tab">Education</button>
+    <button class="tab">Experience</button>
+    <button class="tab">Skills</button> -->
+   
+<a href="#aboutme" class="tab active">About Me</a>
+  <a href="#education" class="tab">Education</a> 
+  <a href="#experience" class="tab">Experience</a>
+  <a href="#skills" class="tab">Skills</a>
+
+  </nav>
+
+  <main>
+    <aside class="left-box">
+      <div class="box light">
+        <img src="face.png" alt="Tofu Waiting" class="hero-img" />
+      </div>
+      <div class="box green">
+        <div><a href="https://drive.google.com/file/d/1bCTZvlbGwA_jrn0pydVZaeH-d_2PARbt/view?usp=drive_link" 
+   target="_blank" 
+   class="cv-button"><p class="cv">
+   CV & COVER LETTER</p>
+</a>
+
+<style>
+.cv-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 140px;
+    height: 60px;
+    margin: 16px 15px;
+    padding: 5px;
+    background-color: #004cff;
+    color: #fff;
+    text-shadow:
+    1px 1px 0 black;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 2px solid #000;
+}
+
+.cv-button:hover {
+    background-color: #ffb200;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(239, 255, 10, 0.2);
+}
+</style></div>
+
+<div><a href="https://bohth.github.io/Portfolio/" 
+   target="_blank" 
+   class="port-button"><p class="cv">
+   PORTFOLIO</p>
+</a>
+
+<style>
+.port-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 140px;
+    height: 60px;
+    margin: 10px 15px;
+    padding: 5px;
+    background-color: #004cff;
+    color: #fff;
+    text-shadow:
+    1px 1px 0 black;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 2px solid #000;
+}
+
+.port-button:hover {
+    background-color: #ffb200;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+</style></div>
+
+
+    </div>
+    </aside>
+    
+<div class="all">
+    <section class="content" id="aboutme">
+      <h2 class="welcome">WELCOME TO TOFU’S WEBSITE</h2>
+      <img src="tofuwaiting.png" alt="Tofu Waiting" class="hero-img" />
+<div class="about">
+      <p>
+        Hi! I’m Hà, but you can call me Tofu (yeah, I came up with that myself, lol). I just graduated earlier this year and will officially receive my degree in November 2025.
+      </p>
+
+      <p>
+        So far, I’ve got almost two years of work experience in various roles — all somehow related to the Business field I studied.
+      </p>
+
+      <p>
+        Outside of work, my biggest passions are gaming and PC gear. I love building PCs, though my wallet doesn’t always agree, meh.
+      </p>
+
+      <p>
+        If I could make one career wish, it’d be to earn enough money to buy the newest “green GPU” with that little “Ti” at the end.
+      </p>
+
+      <p class="end">
+        That’s pretty much me — nice to meet you!
+      </p>
+    </div>
+    </section>
+    
+ <div class="experience-content"id="experience">
+
+  <section class="job-box">
+    <h2 class="role">DIGITAL MARKETING TEAM LEADER</h2>
+    <p class="comp"><strong>PEARL GROUP VIETNAM | March 2025 – July 2025</strong></p>
+    
+    <ul class="expc">
+      <li><img src="anemometer.png" alt="icon" class="icon">Researched consumer insights across Vietnam, US, and Dubai</li>
+      <li><img src="anemometer.png" alt="icon" class="icon">Planned and executed digital campaigns</li>
+      <li><img src="anemometer.png" alt="icon" class="icon">Built localized content calendars and creative assets reflecting Vietnamese spice culture.</li>
+      <li><img src="anemometer.png" alt="icon" class="icon">Managed content production workflow and coordinated with agencies</li>
+      <li><img src="anemometer.png" alt="icon" class="icon">Collaboration across sales, store, and factory teams to ensure consistent brand positioning</li>
+      <li><img src="anemometer.png" alt="icon" class="icon">Organized offline activations (food fairs, booths, exhibitions).</li>
+    </ul>
+  </section>
+
+  <section class="job-box">
+      <h2 class="role">E-COMMERCE SALE&OPERATION LEADER  - TIK TOK SHOP US</h2>
+      <p class="comp"><strong>ENCYCOM Co., Ltd | Aug 2024 – January 2025</strong></p>
+      <ul class="expc">
+      <li><img src="eclipse.png" alt="icon" class="icon">Oversaw Tik Tok Shop operations and performance</li>
+      <li><img src="eclipse.png" alt="icon" class="icon">Conducted market research to identify trending fashion products</li>
+      <li><img src="eclipse.png" alt="icon" class="icon">Managed ad campaigns and met sales targets</li>
+      <li><img src="eclipse.png" alt="icon" class="icon">Coordinated with fulfillment and CS teams</li>
+      <li><img src="eclipse.png" alt="icon" class="icon">Recruited US KOCs, partnered with affiliate agencies</li>
+      <li><img src="eclipse.png" alt="icon" class="icon">Led team to achieve KPIs with 800+ monthly orders and regular reporting</li>
+      </ul>
+  </section>
+
+  <section class="job-box">
+      <h2 class="role">INTERNSHIP - TIK TOK SHOP & CONTENT US MARKET </h2>
+      <p class="comp"><strong>VANI E-Commerce Co., Ltd | Feb 2024 - June 2024</strong></p>
+      <ul class="expc">
+      <li><img src="game.png" alt="icon" class="icon">Manage content for TikTok channels in the US (40 channels)</li>
+      <li><img src="game.png" alt="icon" class="icon">Filmed and edited complete videos for channel uploads (≥60/day)</li>
+      <li><img src="game.png" alt="icon" class="icon">Develop long-term plans to maintain and increase engagement</li>
+      </ul>
+  </section>
+  </div>
+
+
+  <!--<div class="education-content">
+    <section class="job">
+    <h2 class="role22">EDUCATION</h2>
+  </section>
+
+  <section class="job-box2">
+    <h2 class="role2">INTERNATIONAL UNIVERSITY - VIETNAM NATIONAL UNIVERSITY</h2>
+    <p class="comp1"><strong>Business Administration - International Business</strong></p>
+  </section>
+
+  <section class="job-box2">
+      <h2 class="role2">NGUYEN QUANG DIEU HIGH SCHOOL FOR THE GIFTED</h2>
+      <p class="comp1"><strong>Excellent student in the English major</strong></p>
+  </section>
+
+  <section class="job-box2">
+      <h2 class="role2">LANGUAGES</h2>
+      <ul class="comp1">
+      <li><img src="game.png" alt="icon" class="icon">English: IELTS 6.5</li>
+      <li><img src="game.png" alt="icon" class="icon">Japanese: JLPT N5 (currently studying)</li>
+      </ul>
+  </section>
+  </div>-->
+
+  <div class="education-content timeline-grid-container" id="education">
+  <div class="timeline-grid-container1"></div>
+   <div class="timeline-grid-container2"></div>
+  <section class="job full-width-title">
+    <h2 class="role22">EDUCATION</h2>
+  </section>-->
+
+  <div class="timeline-marker">
+    <div class="year-box">2020<br>-<br>2024</div>
+  
+  <section class="job-box2">
+    <h2 class="role2">INTERNATIONAL UNIVERSITY - VIETNAM NATIONAL UNIVERSITY</h2>
+    <p class="comp1"><strong><img src="8820924.png" alt="icon" class="icon">Business Administration - International Business</strong></p>
+  </section>
+</div>
+  <div class="timeline-marker">
+    <div class="year-box">2016<br>-<br>2020</div>
+  
+  <section class="job-box2">
+      <h2 class="role2">NGUYEN QUANG DIEU HIGH SCHOOL FOR THE GIFTED</h2>
+      <p class="comp1"><strong><img src="8820924.png" alt="icon" class="icon">Excellent student in the English major</strong></p>
+  </section>
+</div>
+
+
+  <div class="timeline-marker">
+    <div class="year-box">LANGUAGES</div>
+  
+  <section class="job-box2">
+      
+      <ul class="comp1"> 
+      <li><img src="game.png" alt="icon" class="icon"><strong>English: IELTS 6.5</strong></li>
+      <li><img src="game.png" alt="icon" class="icon"><strong>Japanese: JLPT N5 (currently studying)</strong></li>
+      </ul>
+  </section>
+  </div>
+  <div class="note">
+<div class="note1"><strong>In high school, I didn’t focus on studying, i spent time exploring interests like video editing, skateboarding, and guitar, and hanging out with friends. I still maintained a good student. While I didn’t achieve many notable accomplishments, it helped me understand myself and my passions better.</strong></div>
+<div class="note2"><strong>In university, it was pretty much the same. I studied economics, finance, marketing, e-commerce, and culture — all challenging courses that required time and critical thinking. I finished with a GPA of 2.9/4.0, aiming for 3.0 but lmao i miscalculated few final courses.</strong></div>
+<div class="note3"><strong>Overall, my academic record is fairly ordinary, with no major achievements to highlight. On the bright side, I enjoy learning languages. I took a Japanese course, passed N5, and am now around N4. Next year, I plan to begin learning Mandarin and continue Japanese up to N3.</strong></div>
+</div>
+
+
+
+
+
+
+</div>
+<div class="skills-content" id="skills">
+    <h2 class="role222">MY SKILLS & STATS</h2>
+  </section>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+    <section class="job-box" style="background-color: #ffb200;">
+      <h2 class="role">MARKETING & OPS</h2>
+      <ul class="expcc" style="font-size: 14px;">
+        <li><img src="game.png" class="icon"> E-commerce Operations
+          <div class="skill-bar"><div class="fill" style="width: 85%;"></div></div>
+        </li>
+        <li><img src="game.png" class="icon"> Ads & KOL Management
+          <div class="skill-bar"><div class="fill" style="width: 80%;"></div></div>
+        </li>
+        <li><img src="game.png" class="icon"> Project Management
+          <div class="skill-bar"><div class="fill" style="width: 90%;"></div></div>
+        </li>
+        <li><img src="game.png" class="icon"> Campaign Planning & Execution
+          <div class="skill-bar"><div class="fill" style="width: 85%;"></div></div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="job-box" style="background-color: #ffb200;">
+      <h2 class="role">CREATIVE & TECH</h2>
+      <ul class="expcc" style="font-size: 14px;">
+        <li><img src="eclipse.png" class="icon"> Content & Video Editing
+          <div class="skill-bar"><div class="fill" style="width: 85%;"></div></div>
+        </li>
+        <li><img src="eclipse.png" class="icon"> Market Research
+          <div class="skill-bar"><div class="fill" style="width: 75%;"></div></div>
+        </li>
+        <li><img src="eclipse.png" class="icon"> HTML/CSS (SEO)
+          <div class="skill-bar"><div class="fill" style="width: 55%;"></div></div>
+        </li>
+        <li><img src="eclipse.png" class="icon"> Data Analysis & Reporting
+          <div class="skill-bar"><div class="fill" style="width: 80%;"></div></div>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="skills-boxv" style="background-color: #fef7da; border-style: dashed;">
+    <h2 class="role" style="background-color: #004cff;">TOOLS & OTHERS</h2>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 10px; font-family: 'Pixelify Sans';">
+       <span><img src="anemometer.png" class="icon"> MS Office</span>
+       <span><img src="anemometer.png" class="icon"> Analytics Tools</span>
+       <span><img src="anemometer.png" class="icon"> Creative Tools</span>
+    </div>
+  </section>
+</div>
+
+  </main>
+  <footer>
+    <p>Made with 💗 by Tofu</p>
+  </footer>
+<div class="pattern">
+      <img src="abstractpixel.jpg" alt="Nền pattern">
+</div>
+</body>
+</html>
